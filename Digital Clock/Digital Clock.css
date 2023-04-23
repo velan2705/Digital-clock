@@ -1,0 +1,80 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('/fonts/DIGITALDREAMFATSKEWNARROW.ttf');
+   }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.main-box{
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns:80% 10% 10%;
+    grid-template-rows: 80% 20%;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 10px;
+    background-color: #000000;
+    
+    /* background-color: brown; */
+    
+}
+.clock{
+     border: none;
+     color: rgb(221,255,0);
+}
+.time{
+    padding: 0%;
+    margin: 0%;
+    padding-left: 10vh;
+    font-family:'digital-clock-font';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30vh;
+    margin-bottom:0%;
+    padding-bottom:0%;
+    margin-top: 8vh;
+}
+span:nth-child(1){
+    /* color: #5e9bf8; */
+}
+span:nth-child(3){
+    /* color: #ffa36c; */
+}
+span:nth-child(even){
+    padding-bottom: 6vh;
+    /* color: #929292; */
+}
+.menu{
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 4vh;
+    grid-area: 1/3/3/4;
+}
+.menu i {
+    margin-top: 1vh;
+    margin-right: 2vh;
+   
+}
+.am{
+    grid-area: 1/2/3/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 6vh;
+}
+.day{
+    text-align: center;
+    /* border: 1px solid white; */
+    padding-bottom: 10vh;
+    margin-left: 5vw;
+    font-size: 1.5em;
+}
+
